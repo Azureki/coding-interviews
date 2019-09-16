@@ -1,9 +1,8 @@
 #include <string>
-#include <vector>
 using namespace std;
 class Solution {
 public:
-    void reverseString(string s, int left, int right) {
+    void reverseString(string &s, int left, int right) {
         while (left < right) {
             swap(s[left++], s[--right]);
         }
